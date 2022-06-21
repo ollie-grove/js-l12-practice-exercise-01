@@ -19,6 +19,7 @@ const displayUsers = function (userResults) {
         const country = user.location.country;
         const name = user.name.first; 
         const imageUrl = user.picture.medium; 
+        const userDiv = document.createElement("div"); 
 
         userDiv.innerHTML = `
             <h3>${name}</h3>
